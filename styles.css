@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('path/to/your/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* This is needed to position the header absolutely within it */
+    min-height: 100vh; /* Ensures the body takes at least the height of the viewport */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Lower opacity */
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.signage {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    padding: 20px;
+    width: 600px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+    position: relative; /* To ensure proper stacking context */
+}
+
+.signage h1 {
+    color: #d62828;
+    text-align: center;
+}
+
+.signage p {
+    font-size: 18px;
+    color: #333;
+}
+
+.signage a {
+    color: #b81111;
+}
+
+/* Custom scrollbar styles */
+.signage::-webkit-scrollbar {
+    width: 10px;
+}
+
+.signage::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.signage::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.signage::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+footer {
+    position: absolute; /* Positions the header absolutely within the body */
+    bottom: 0; /* Aligns the header at the bottom of the body */
+    width: 100%; /* Ensures the header stretches across the full width of the viewport */
+    text-align: center;
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+    z-index: 2; /* Makes sure the header is above the ::before background */
+}
