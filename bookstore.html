@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falkland Islands Press - Merch Store</title>
+    <link rel="stylesheet" href="style.css"> <!-- Using the provided style.css -->
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Falkland Islands Press</h1>
+        <h2> Paradise Found. </h2>
+        <div class="popup-container" id="popup-container">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Investors</a></li>
+                    <li><a href="#">Bookstore</a></li>
+                    <li><a href="indexx.html">Bella.com</a></li>
+               <li><a href="recruiting.html">Consulting</a></li> 
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Merch Section -->
+    <section class="merch-container">
+        <h2 class="merch-title">Basic Goods</h2>
+        <div class="merch-grid">
+            <!-- 12 Merch Items -->
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 1</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 2</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 3</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 4</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 5</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 6</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 7</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 8</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 9</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 10</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 11</h3><p>Description</p><button>Buy Now</button></div>
+            <div class="merch-item"><img src="https://via.placeholder.com/200x150" alt="Item"><h3>Item 12</h3><p>Description</p><button>Buy Now</button></div>
+            <!-- Repeat for 12 items -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Falkland Islands Press. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dropdown Toggle
+        const dropdownButton = document.querySelector('.dropdown-button');
+        const dropdown = document.querySelector('.dropdown');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdown.classList.toggle('active');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

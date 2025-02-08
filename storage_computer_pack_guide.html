@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Computer Pack with Raspberry Pi Guide</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        a {
+            color: #007BFF;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Building a Storage Computer Pack with Raspberry Pi (Beginner-Friendly Guide)</h1>
+
+<h2>Introduction</h2>
+<p>Welcome to this step-by-step guide on how to build your own <strong>Storage Computer Pack (NAS - Network Attached Storage)</strong> using a <strong>Raspberry Pi</strong>! This guide is designed for beginners. By the end of this project, you'll have your own personal cloud storage system where you can store and access files from any device!</p>
+
+<h2>1. Components Required (Bill of Materials - BOM)</h2>
+<h3>Hardware:</h3>
+<ul>
+    <li><strong>Raspberry Pi (Model 3/4/Zero)</strong></li>
+    <li><strong>MicroSD Card (16GB or more)</strong></li>
+    <li><strong>Power Supply for Raspberry Pi</strong></li>
+    <li><strong>External Hard Drive or USB Flash Drive</strong></li>
+    <li><strong>USB Hub (optional)</strong></li>
+    <li><strong>Ethernet Cable</strong> or Wi-Fi</li>
+    <li><strong>Monitor, Keyboard, Mouse, HDMI Cable</strong></li>
+</ul>
+
+<h3>Software:</h3>
+<ul>
+    <li><strong>Raspberry Pi OS</strong></li>
+    <li><strong>Samba</strong></li>
+    <li><strong>OpenMediaVault (optional)</strong></li>
+</ul>
+
+<h2>2. Setting Up the Raspberry Pi</h2>
+<ol>
+    <li>Install Raspberry Pi OS with Raspberry Pi Imager.</li>
+    <li>Connect Monitor, Keyboard, Mouse, and Power.</li>
+</ol>
+
+<h2>3. Installing and Configuring Storage Software</h2>
+<h3>Option 1: Samba (Simple Network Drive)</h3>
+<pre><code>sudo apt update && sudo apt upgrade -y
+sudo apt install samba -y
+mkdir /home/pi/shared
+sudo chmod 777 /home/pi/shared
+sudo nano /etc/samba/smb.conf
+sudo systemctl restart smbd</code></pre>
+
+<h3>Option 2: OpenMediaVault (Advanced NAS)</h3>
+<p>Install and access OpenMediaVault through the Raspberry Pi's IP address.</p>
+
+<h3>Remote Access over the Internet</h3>
+<ol>
+    <li>Set up port forwarding (Port 445).</li>
+    <li>Use DDNS for dynamic IP management.</li>
+    <li>Install PiVPN for secure VPN access.</li>
+</ol>
+
+<h2>4. Troubleshooting</h2>
+<ul>
+    <li><strong>Network Issues:</strong> Check connections and restart Samba.</li>
+    <li><strong>Drive Detection:</strong> Use <code>lsblk</code> to check connected drives.</li>
+</ul>
+
+<h2>Congratulations!</h2>
+<p>You now have your own personal cloud storage, accessible even from anywhere in the world!</p>
+
+</body>
+</html>

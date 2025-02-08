@@ -55,16 +55,10 @@ main {
 
 /* Hide menu initially */
 menu {
-    display: none;
+    display: list-item;
+    position: absolute;
+   
     transition: transform 0.3s ease-in-out;
-}
-
-/* Show and move menu when hovered */
-header:hover menu {
-    display: block;
-    transform: translateY(-5px);
-    background-color: #2C3E50;
-    padding: 10px;
 }
 
 menu ul {
@@ -80,6 +74,6 @@ menu ul li {
 
 menu ul li a {
     color: white;
-    text-decoration: none;
+    text-decoration-color: Black;
     font-weight: bold;
 }

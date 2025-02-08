@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella.com - Product Packs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bella.com</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="raspberry_pi_audio_amp_guide.html">Audio Amplifier Pack</a>
+            <a href="storage_computer_pack_guide.html">Storage Computer Pack</a>
+            <a href="diy_surveillance_camera_pack_guide.html">Camera Kit Pack</a>
+            <a href="diy_raspberry_pi_tv_guide.html">TV GUIDE</a>
+            <a href="#cart">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="audio-pack">
+            <h2>Audio Amplifier Pack</h2>
+            <div class="product">
+                <img src="audio-pack.jpg" alt="Audio Amplifier Pack">
+                <p>A complete DIY kit to build your own audio amplifier and speaker system.</p>
+                <ul>
+                    <li><strong>Amplifier Board:</strong> Class D amplifier module (PAM8403 or TPA3116)</li>
+                    <li><strong>Speaker Drivers:</strong> Pair of 3-inch full-range speakers</li>
+                    <li><strong>Enclosure:</strong> Pre-cut MDF speaker box</li>
+                    <li><strong>Power Supply:</strong> USB power cable</li>
+                    <li><strong>Extras:</strong> User manual, foam padding, decorative grilles</li>
+                </ul>
+                <p><strong>Price:</strong> $75</p>
+                <button class="add-to-cart" data-id="1" data-name="Audio Amplifier Pack" data-price="75">Add to Cart</button>
+            </div>
+        </section>
+        <section id="camera-pack">
+            <h2>Camera Kit Pack</h2>
+            <div class="product">
+                <img src="camera-pack.jpg" alt="Camera Kit Pack">
+                <p>A DIY kit to build a camera module for surveillance, IoT, or photography projects.</p>
+                <ul>
+                    <li><strong>Camera Module:</strong> 5MP or 8MP camera (e.g., Raspberry Pi Camera V2 or Arducam).</li>
+                    <li><strong>Raspberry Pi:</strong> Raspberry Pi Zero W or compatible board.</li>
+                    <li><strong>Connection Cables:</strong> CSI cable or USB adapter.</li>
+                    <li><strong>Power Supply:</strong> USB power cable.</li>
+                    <li><strong>Enclosure:</strong> Pre-designed or 3D printable camera housing.</li>
+                    <li><strong>Extras:</strong> Assembly manual, mounting brackets, optional IR module for night vision.</li>
+                </ul>
+                <p><strong>Price:</strong> $90</p>
+                <button class="add-to-cart" data-id="3" data-name="Camera Kit Pack" data-price="90">Add to Cart</button>
+            </div>
+        </section>
+        
+
+        <section id="storage-pack">
+            <h2>Storage Computer Pack</h2>
+            <div class="product">
+                <img src="storage-pack.jpg" alt="Storage Computer Pack">
+                <p>Build a storage-focused Raspberry Pi computer for personal file storage or a mini-NAS.</p>
+                <ul>
+                    <li><strong>Raspberry Pi:</strong> Raspberry Pi 4 (4GB or 8GB RAM)</li>
+                    <li><strong>Storage Device:</strong> 2.5" SSD with USB-to-SATA adapter</li>
+                    <li><strong>Power Supply:</strong> 5V/3A USB-C power supply</li>
+                    <li><strong>Extras:</strong> Preloaded NAS software, user guide</li>
+                </ul>
+                <p><strong>Price:</strong> $150</p>
+                <button class="add-to-cart" data-id="2" data-name="Storage Computer Pack" data-price="150">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <li>Your cart is empty.</li>
+            </ul>
+            <p id="cart-total">Total: $0</p>
+            <button id="checkout" style="display: none;">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved for Civic Books LLC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
