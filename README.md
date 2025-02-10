@@ -1,2 +1,1 @@
-# MaplewoodReviewMiniMagazine789pageslong
- Magazine Idea
+# Businesscard-
