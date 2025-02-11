@@ -13,6 +13,8 @@ body {
     background-color: #333;
 }
 
+
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -210,4 +212,29 @@ menu ul li a {
     menu ul li {
         margin-bottom: 10px;
     }
+}
+
+
+.clock-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+}
+canvas {
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: block;
+}
+
+
+.digital-clock {
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.4;
 }
