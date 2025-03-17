@@ -88,3 +88,5 @@ function updateDigitalClock() {
         <div>${hours}:${minutes}:${seconds}</div>
     `;
 }
+
+
