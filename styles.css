@@ -14,22 +14,21 @@ body {
 }
 
 
-
 main {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    justify-content: horizontal; /* Centers items horizontally */     /* Optional: centers items vertically */
     height: auto;
     gap: 50px;
     background-color: #333;
-    
 }
+
 
 /* Sidebar - stays left */
 .sidebar {
     width: 350px;
     height: 400px;
+    justify-content: left /* Aligns items to the left */;
     background-color: #f2f2f2;
     padding: 20px;
     border: 10px solid rgb(12, 16, 11);
@@ -78,6 +77,16 @@ main {
 .signage h1 {
     font-size: 1.2em;
     font-size: x-large;
+}
+
+
+.clock-container {
+    position: absolute; /* Corrected spelling from 'abstolute' to 'absolute' */
+    justify-content: right;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    opacity: 50%;
 }
 
 /* Hide menu initially */
