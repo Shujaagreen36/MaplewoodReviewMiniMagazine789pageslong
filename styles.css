@@ -1,11 +1,10 @@
 header {
     background-color: #333;
-    color: rgb(74, 71, 95);
+    color: rgb(126, 119, 175);
     padding: 10px 20px;
     text-align: center;
     position: relative;
 }
-
 
 body {
     margin: 0;
@@ -26,9 +25,10 @@ main {
 
 /* Sidebar - stays left */
 .sidebar {
-    width: 350px;
+    width: 700px;
     height: 400px;
-    justify-content: left /* Aligns items to the left */;
+    justify-content: center; /* Centers items horizontally in the sidebar */
+    display: flex; /* Enables flexbox for the sidebar */
     background-color: #f2f2f2;
     padding: 20px;
     border: 10px solid rgb(12, 16, 11);
@@ -55,7 +55,7 @@ main {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction:column; /* Aligns text vertically */
     justify-content: center;
     align-items: center;
     overflow-y: auto; /* Makes text scrollable */
@@ -77,16 +77,6 @@ main {
 .signage h1 {
     font-size: 1.2em;
     font-size: x-large;
-}
-
-
-.clock-container {
-    position: absolute; /* Corrected spelling from 'abstolute' to 'absolute' */
-    justify-content: right;
-    top: 10px;
-    right: 10px;
-    text-align: center;
-    opacity: 50%;
 }
 
 /* Hide menu initially */
@@ -231,7 +221,7 @@ menu ul li a {
     top: 10px;
     right: 10px;
     text-align: center;
-    opacity: 50%;
+    opacity: 75%;
 }
 canvas {
     background: #f0f0f0;
