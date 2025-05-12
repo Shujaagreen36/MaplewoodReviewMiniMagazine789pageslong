@@ -39,6 +39,8 @@ main {
     transition: transform 0.3s ease-in-out;
 }
 
+.Falcon { color: rgb(108, 250, 52); }
+
 /* Moves sidebar on hover */
 .sidebar:hover {
     transform: translateX(-10px);
