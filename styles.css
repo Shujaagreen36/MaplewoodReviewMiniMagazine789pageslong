@@ -1,9 +1,9 @@
-header {
+.homeheader {
     background-color: #333;
     color: rgb(126, 119, 175);
     padding: 10px 20px;
-    text-align: center;
-    position: relative;
+    text-align: left;
+    position: absolute;
 }
 
 body {
@@ -16,21 +16,30 @@ body {
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: horizontal; /* Centers items horizontally */     /* Optional: centers items vertically */
-    height: auto;
-    gap: 50px;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    min-height: 100vh;         /* Full viewport height */
     background-color: #333;
 }
 
 
+main .homesidebar  {
+    background-color: #19c24f;
+
+
+}
+
 /* Sidebar - stays left */
-.sidebar {
-    width: 700px;
-    height: 400px;
-    justify-content: center; /* Centers items horizontally in the sidebar */
-    display: flex; /* Enables flexbox for the sidebar */
-    background-color: #f2f2f2;
+.homesidebar {
+    width: 220px; /* Increase width as needed */
+    min-width: 150px;
+    max-width: 100%;
+    height: 300px; /* Increase height if needed */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #19c24f;
     padding: 20px;
     border: 10px solid rgb(12, 16, 11);
     border-radius: 10px;
@@ -38,17 +47,19 @@ main {
     overflow-y: auto;
     flex-shrink: 0;
     transition: transform 0.3s ease-in-out;
+    word-break: break-word; /* Ensures long words wrap */
+    margin: 0 auto;            /* Optional: extra centering for smaller screens */
 }
 
 .Falcon { color: rgb(108, 250, 52); }
 
 /* Moves sidebar on hover */
-.sidebar:hover {
+.homesidebar:hover {
     transform: translateX(-10px);
 }
 
 /* Signage - Square, Centered, and Scrollable */
-.signage {
+.homesignage {
     width: 400px;  
     height: 400px;
     background-color: #f2f2f2;
@@ -66,18 +77,18 @@ main {
 }
 
 /* Moves signage on hover */
-.signage:hover {
+.homesignage:hover {
     transform: translateY(-10px);
 }
 
 /* Ensures all text fits inside */
-.signage h1, .signage p {
+.homesignage h1, .signage p {
     margin: 10px 0;
     font-size: .8em;
     word-wrap: break-word;
 }
 
-.signage h1 {
+.homesignage h1 {
     font-size: 1.2em;
     font-size: x-large;
 }
@@ -128,9 +139,6 @@ menu ul li a {
 
 
 }
-
-
-
 
 /* Container for Summary & Business - Side by Side */
 .content-container {
