@@ -50,7 +50,7 @@ main .homesidebar  {
 
 /* Sidebar - stays left */
 .homesidebar {
-    width: 220px; /* Increase width as needed */
+    width: 720px; /* Increase width as needed */
     min-width: 150px;
     max-width: 100%;
     height: 300px; /* Increase height if needed */
@@ -79,9 +79,10 @@ main .homesidebar  {
 
 /* Signage - Square, Centered, and Scrollable */
 .homesignage {
-    width: 400px;  
-    height: 400px;
-    background-color: #f2f2f2;
+    width: 1000px;  /* Increase width as needed */
+    min-width: 150px;
+    height: 1000px;
+    background-color: #886ed5;
     padding: 20px;
     border: 10px solid rgb(12, 16, 11);
     border-radius: 10px;
