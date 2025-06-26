@@ -246,7 +246,14 @@ menu ul li a {
     }
 }
 
+.racing-flags {
+    position : absolute;
+    top: 20px;
+    right: 75px;
+    width: 100px;
+    height: 100px;
 
+}
 .clock-container {
     position: absolute;
     top: 10px;
