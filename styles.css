@@ -3,7 +3,7 @@
 :root {
   --bg-dark: #1e1e2f;
   --bg-light: #f9fafb;
-  --accent: #4f46e5;
+  --accent: #c4e204;
   --text-primary: #1f2937;
   --text-secondary: #6b7280;
   --radius: 12px;
@@ -21,6 +21,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.home-header {
+  background: var(--bg-dark);
+  color: #fff;
+  padding: 3.5rem 6rem;
+  box-shadow: var(--shadow);
+}
 header {
   background: #ffffffcc;
   backdrop-filter: blur(10px);
@@ -33,6 +39,11 @@ header {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.75rem;
+}
+
+.grid-container {
+position: relative;
+
 }
 
 header h1 {
@@ -61,6 +72,7 @@ nav a {
   position: relative;
   transition: all 0.3s ease;
 }
+
 
 nav a::after {
   content: '';
@@ -173,17 +185,25 @@ footer a:hover {
 }
 
 .pdf-container {
+  /* width: 1000%; */
+  /* max-width: 1000vw; */
+/*  height: 800vh; */
+/*  margin: 0 auto; */
+  height: max-content;
   width: 100%;
-  max-width: 100vw;
-  height: 80vh;
-  margin: 0 auto;
+  opacity: .65;
+
+
+
 }
 
-.pdf-container iframe,
-.pdf-container embed {
-  width: 100%;
-  height: 100%;
-  border: none;
+img {
+  max-width: 60%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  ;
 }
 
 .clock-container {
